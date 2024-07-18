@@ -30,7 +30,7 @@ class WdDio with DioMixin implements Dio {
   }) {
     this.options = options ?? BaseOptions();
     // 禁止重定向
-    this.options.followRedirects = false;
+    this.options.followRedirects = true;
 
     // 状态码错误视为成功
     this.options.validateStatus = (status) => true;
